@@ -14,7 +14,7 @@ function createFollow(array $data)
     // DB接続
     $mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
     if ($mysqli->connect_errno) {
-        echo 'MySQLの接続に失敗しました。：' . $mysqli->connect_error . "\n";
+        echo 'MySQLの接続に失敗しました。:' . $mysqli->connect_error . "\n";
         exit;
     }
  
@@ -61,7 +61,7 @@ function deleteFollow(array $data)
     // DB接続
     $mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
     if ($mysqli->connect_errno) {
-        echo 'MySQLの接続に失敗しました。：' . $mysqli->connect_error . "\n";
+        echo 'MySQLの接続に失敗しました。:' . $mysqli->connect_error . "\n";
         exit;
     }
  

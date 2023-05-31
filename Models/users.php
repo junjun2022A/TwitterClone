@@ -16,7 +16,7 @@ function createUser(array $data)
  
     // 接続エラーがある場合->処理停止
     if ($mysqli->connect_errno) {
-        echo 'MySQLの接続に失敗しました。：' . $mysqli->connect_error . "\n";
+        echo 'MySQLの接続に失敗しました。:' . $mysqli->connect_error . "\n";
         exit;
     }
  
@@ -58,7 +58,7 @@ function updateUser(array $data)
     // DB接続
     $mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
     if ($mysqli->connect_errno) {
-        echo 'MySQLの接続に失敗しました。：' . $mysqli->connect_error . "\n";
+        echo 'MySQLの接続に失敗しました。:' . $mysqli->connect_error . "\n";
         exit;
     }
  
@@ -122,7 +122,7 @@ function findUserAndCheckPassword(string $email, string $password)
  
     // 接続エラーがある場合->処理停止
     if ($mysqli->connect_errno) {
-        echo 'MySQLの接続に失敗しました。：' . $mysqli->connect_error . "\n";
+        echo 'MySQLの接続に失敗しました。:' . $mysqli->connect_error . "\n";
         exit;
     }
  
@@ -176,7 +176,7 @@ function findUser(int $user_id, int $login_user_id = null)
     // DB接続
     $mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
     if ($mysqli->connect_errno) {
-        echo 'MySQLの接続に失敗しました。：' . $mysqli->connect_error . "\n";
+        echo 'MySQLの接続に失敗しました。:' . $mysqli->connect_error . "\n";
         exit;
     }
  
